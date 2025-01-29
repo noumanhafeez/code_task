@@ -92,6 +92,12 @@ android {
         versionName "1.0"
     }
     signingConfigs {
+         release {
+            storeFile file('task.keystore')
+            storePassword 'nouman1122'
+            keyAlias 'task'
+            keyPassword 'nouman1122'
+         }
         debug {
             storeFile file('debug.keystore')
             storePassword 'android'
